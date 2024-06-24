@@ -1,3 +1,6 @@
+# Set execution policy
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+
 # Get path to Documents folder
 $documentsFolder = [Environment]::GetFolderPath([Environment+SpecialFolder]::MyDocuments)
 
@@ -16,8 +19,6 @@ function Log-Error {
 }
 
 try {
-    # Set execution policy
-    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 
     Import-Module PowerShellGet
 
