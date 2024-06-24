@@ -26,7 +26,7 @@ try {
     Install-Module Microsoft.Graph -Scope CurrentUser -Force -ErrorAction Stop
     Install-Module Microsoft.Graph.Beta -Scope CurrentUser -Force -AllowClobber -ErrorAction Stop
     Install-Module Microsoft.Graph.Users -Scope CurrentUser -Force -ErrorAction Stop
-    Install-Module -Name PackageManagement -Force -Scope AllUsers -ErrorAction Stop
+    Install-Module -Name PackageManagement -Force -Scope CurrentUser -ErrorAction Stop
 
     # Import required modules
     Import-Module Microsoft.Graph.Users -ErrorAction Stop
